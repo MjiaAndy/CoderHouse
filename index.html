@@ -25,22 +25,22 @@
     <body id="body">    
     <!--Inicio encabezado de las paginas-->
         <header id="header" >
-            <nav class="navbar  navbar-expand-lg bg-body-emphasis d-flex justify-content-between">
-                <div class="container-fluid justify-content-between">
-                  <a class="navbar-brand" href="#"><img src="./icons/HEADER.png" alt=""></a>
+            <nav class="navbar h-auto navbar-expand-lg bg-body-emphasis d-flex">
+                <div class="container-fluid h-auto align-items-center">
+                  <a class="navbar-brand px-2 w-auto h-auto" href="#"><img src="./icons/HEADER.png" alt=""></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse w-100 justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav  align-content-end">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="./pages/novedades.html">Novedades/Destacado</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown" href="./pages/nosotros.html" role="button" data-bs="dropdown" aria-expanded="false">
+                        <a class="nav-link " href="./pages/nosotros.html" role="button" data-bs="dropdown" aria-expanded="false">
                           Nosotros
                         </a>
                       </li>
@@ -53,7 +53,7 @@
                     </ul>
                   </div>
                 </div>
-              </nav>
+            </nav>
             
         </header> 
     <!-- Fin encabezado de las paginas-->
@@ -61,19 +61,21 @@
     <!-- Contenido -->
         <main id="main">
             <nav class="main__News">
-                <h3>Hasta un 50% de descuento</h3>
-                <a href="main/ofertas.html">Comprar</a>
+                <h3 class="main__News__txt">Hasta un 50% de descuento</h3>
+                <a  class="main__News__link" href="main/ofertas.html">Comprar</a>
             </nav>
     
             <section class="main__Section">
                 <article class="main__Section__newIncome">
-                    <h3>Conoce nuestros nuevos ingresos</h3>
-                    <h1>Aprovecha la promocion con el codigo START23</h1>
-                    <a href="main/novedades.html"><button class="main__Section__newIncome__button">Ver</button></a>
+                    <h3 class="main__Section__newIncome__Txt1 main__Section__newIncome__Txts" >Conoce nuestros nuevos ingresos</h3>
+                    <h1 class="main__Section__newIncome__Txt2 main__Section__newIncome__Txts" >Aprovecha la promocion con el codigo START23</h1>
+                    <a href="./pages/novedades.html"><button class="main__Section__newIncome__button">Ver</button></a>
                 </article>
 
-                <article class="main__Section__imgDisplay">
-                    <img src="images/blancaAmarilla.jpg" alt="Primera zapatilla"/>
+                <article class="main__Section__Display">
+                    <img class="main__Section__Display img1 main__Section__DIsplay__imgs" src="images/blancaAmarilla.jpg" alt=""/>
+                    <img class="main__Section__Display img2 main__Section__DIsplay__imgs" src="images/blancaAmarilla.jpg" alt=""/>
+                    <img class="main__Section__Display img3 main__Section__DIsplay__imgs" src="images/blancaAmarilla.jpg" alt=""/>
                 </article>
             </section>
 

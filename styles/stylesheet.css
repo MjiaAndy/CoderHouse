@@ -9,7 +9,32 @@
 .navbar{
     width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    text-align: center;
+}
+.navbar-brand img{
+    width: 42px;
+    height: 42px;
+    object-fit: fill;
+}
+
+/* .navbar-brand{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.navbar-brand img{
+    position: ;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+} */
 
 /* //////Body-Cuerpo //////*/
 #body {
@@ -17,13 +42,15 @@
     max-width: 1920px;
     min-height: 100vh;
     margin: 0 auto;
-    /* width: 100vw;
-    height: 100vh; */
-    /* orientation: landscape; */
+
 }
 
-:where(a, h1, h2, h3, h6) {
+:is(a, h1, h2, h3, h6) {
     font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    text-decoration-style: none;
+    text-rendering: optimizeLegibility;
 }
     
 
@@ -36,87 +63,95 @@
 }
 
 .main__News{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
     max-width: 100vw;
+    height: 47px;
+    background-color:#F5F5F5;
+    margin-top: 8px;
+    padding: 4px;
+}
+
+.main__News__txt{
     text-align: center;
-    background-color: rgb(234, 232, 230);
-    margin-top: 10px;
     font-size: small;
+    margin: 0;
 }
 
-.main__News h3{
-    padding: 2px 2px;
-}
-
-.main__News a{
+.main__News__link{
     text-align: center;
-    text-decoration: none;
+    font-size: smaller;
     color: gray;
     text-decoration-line: underline;
-    margin: 5px 5px;
+}
+
+.main__Section{
+    position: relative;
 }
 
 .main__Section__newIncome{
-    max-width: 100vw;
-    height: auto;
-    margin-top: 10px;
-    display: block;
-    align-items: center;
+    position: absolute;
+    width: auto;
+    height: 90%;
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    z-index: 2;
 }
 
-.main__Section__newIncome h3, h1{
+.main__Section__newIncome__Txts{
+    position: relative;
     text-align: center;
     overflow: hidden;
+    color: white;
+    text-shadow: 1px 1px 3px black;
 }
-.main__Section__newIncome h3{
+.main__Section__newIncome__Txt2{
     font-weight: bolder;
     font-size: xx-large;
 }
-.main__Section__newIncome h1{
+.main__Section__newIncome__Txt1{
     font-weight: normal;
 }
 
 .main__Section__newIncome__button{
-    width: 48px;
-    height: 18px;
-    background-color: black;
+    position: relative;
+    width: 42px;
+    height: 24px;
+    background-color: rgb(244, 244, 244);
     border-radius: 8px;
-    border: black;
-    color: white;
-    padding: 0px 0px;
+    border: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
+    padding: 0 auto;
     cursor: pointer;
-    margin-left: 0% auto;
-    box-shadow: 1px 2px 2px black;
-    
-}
-
-.main__Section__newIncome a {
-    display: block;
-    margin: 0 auto;
-    width: 0%;
+    box-shadow: 1px 1px 6px black;
     text-align: center;
-    box-shadow: 0px 2px 5px;
-    font-weight: normal;
-}
-
-.main__Section__imgDisplay{
-    width: 99%;
-    height: 360px;
-    border-radius: 25px;
-    display: flex;
-    margin: 10px;
-    justify-self: center;
+    font-size: normal;
+    font-weight: bold;
     
 }
 
-.main__Section__imgDisplay img{
+.main__Section__Display{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 540px;
+    margin: 0
+}
+
+.main__Section__DIsplay__imgs{
     width: 100%;
     height: 100%;
-    border-radius: 25px;
     image-rendering: optimizeQuality;
     object-fit: cover;
     overflow:auto;
     margin-top: 10px;
-    box-shadow: 2px 1px 5px black;
+    box-shadow: 0px 1px 5px black;
 }
 
 /* //////Lista de Produtos////// */
@@ -124,106 +159,123 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     width: 100%;
     height: 100%;
 }
 
 .main__Products__edgeProducts{
-    display: inline-block;
-    align-items: center;
-    background-color: rgb(238, 236, 233);
-    margin: 35px;
-    padding: 15px;
-    border-radius: 25px;
+    background-color: rgb(245, 242, 238);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
     opacity: 100%;
     border: none;
-    box-shadow: 0px 2px 5px;
+    box-shadow: 1px 1px 4px;
 }
 
 .main__Products__boxProducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
-    width: 380px;
-    height: 250px;
-    background-color: rgb(221, 216, 216);
-    border-radius: 25px;
+    width: 500px;
+    height: 650px;
+    background-color: rgb(238, 236, 236);
+    border-radius: 5px;
 }
 
 .main__Products__imgProducts{
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 100%;
-    border-radius: 25px;
+    height: 60%;
+    border-radius: 5px;
+    image-rendering: optimizeQuality;
     object-fit: cover;
-    max-width: 210px;
 }
 
 .main__Products__descriptionProducts {
     display: -webkit-box;
     -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
+    position: relative;
     overflow: hidden;
-    position: absolute;
-    left: 55%;
-    max-width: 170px;
+    text-align: flex-start;
+    justify-self:flex-start;
+    width: 100%;
     height: auto;
-    padding: 7px;
+    padding: 2px;
 }
 
 .main__Products__buttonProducts{
-    position: absolute;
-    top: 85%;
-    left: 67%;
+    position: relative;
+    align-self: flex-start;
     color: white;
     background-color: black;
     border: black ;
     border-radius: 8px;
-    width: 65px;
-    height: 20px;
+    width: 70px;
+    height: 30px;
+    margin-left: 5px;
     box-shadow: 1px 2px 3px black;
+    
 }
 
 /* Pagina novedades */
     .main__Space{
         width: 100%;
-        margin-top: 10px;
+        margin-top: 8px;
         height: 47px;
-        background-color: rgb(234, 232, 230);
+        background-color: #F5F5F5;
     }
     .main__Novedades__section{
         position: relative;
         max-width: 100vw;
         height: auto;
-        margin-top: 5px;
-        text-align: right;
     }
-    .main__Novedades__section__nav h3{
+    .main__Novedades__section__nav{
+        display: flex;
+        max-width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        padding: 0px 10px;
+        gap: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    .main__Novedades__section__nav__words{
+        height: auto;
+        max-width: 100%;
         font-size: medium;
         font-weight: bolder;
         letter-spacing: normal;
+        text-align: center;
+        margin: 0;
     }
-    .main__Novedades__section__nav__words{
-        display: inline-block;
-        max-width: 100vw;
-        margin-right: 25px;
-    }
-    .main__Novedades__section__nav__word1{
-        position: absolute;
-        display: block;
-        text-align: left;
-    }
-    .main__Novedades__section__nav__filterBt{
-        position: absolute;
+
+    /* RESOLVER PROBLEMA CON LOS TEXTOS, TIENEN QUE ESTAR MAS SEPARADOS 1 IZQUIERDA 2 DERECHA CON SUS ICONOS */
+    /* .main__Novedades__section__nav__word1 {
+        max-width: 100%;
+        justify-self: flex-start;
+    } */
+    .main__Novedades__section__nav__filterBts{
         background-color: white;
         border: white;
-        margin: 2px;
-        width: 20px;
-        height: 20px;
+        margin: 0;
+        width: 23px;
+        height: 23px;
     }
-    .main__Novedades__section__nav__filterIcon{
+    .main__Novedades__section__nav__filterIcons{
         width: 100%;
         height: 100%;
         object-fit: cover;
+        overflow: auto;
     }
 
     /* Pagina Ofertas */
@@ -322,59 +374,85 @@
         font-size: small;
     }
     /* Pagina Contacto */
-    .main__Bgtext h1{
+    .main__Bgtext{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .main__Bgtext__txt{
         font-weight: bolder;
         font-size: xx-large;
         text-shadow: 1px 1px 2px black;
     }
     .main__Form{
-        max-width: 100vw;
-        max-height: auto;
-        margin: 0 auto;
-        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0;
     }
     .main__Form__edge{
-        display: flex;
-        margin: 10px 25px;
-        width: 620px;
-        height: 350px;
+        max-width: fit-content;
+        margin: 8px 20px;
         background-color: rgb(228, 228, 222);
         border: none;
         border-radius: 20px;
         box-shadow: 1px 1px 3px black;
     }
-    .main__Form__edge__fields ul li{
+    .main__Form__edge__fields{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        width: 660px;
+        height: 400px;
+    }
+    .main__Form__edge__fields__ul{
+        padding: 0px;
+        margin: 5px 10px;
+    }
+    .main__Form__edge__fields__lists{
         width: 100%;
-        height: 100%;
+        height: auto;
         list-style: none;
-        margin: 10px;
+        margin: 0px;
         font-size: medium;
         font-weight: bold;
         letter-spacing: normal;
     }
     .main__Form__edge__fields__Datafields{
+        align-self: flex-start;
         text-align: left;
         height: 20px;
         border: none;
         color: rgb(167, 161, 161);
         background-color: rgb(185, 183, 183);
         border-radius: 6px;
-        padding: 3px;
+        padding: 5px
     }
+    /* FALTA RESOLVER PROBLEMAS CON LA RESPONSIVIDAD DEL ESPACIO PARA COLOCAR MENSAJES, SE DESBORDA AL LLEGAR A CIERTA RESOLUCION MENOR */
     .main__Form__edge__fields__field4{
         resize: none;
-        width: 600px;
+        box-sizing: border-box;
+        max-width: auto;
+        width: 640px;
         height: 160px;
     }
     .main__Form__edge__fields__button{
-        display: flex;
-        justify-self: auto;
-        max-height: auto;
-        margin: 20px;
+        align-self: flex-start;
+        align-items: center;
+        margin: 10px;
         width: 50px;
-        height: 18px;
+        height: 22px;
         text-align: center;
-        padding: 1px;
+        padding: 0px;
         color: white;
         background-color: black;
         border: black;
@@ -392,7 +470,7 @@
 
 .footer__BottomMenu{
     width: 100%;
-    padding: 40px 6px;
+    padding: 40px 8px;
     margin: auto;
     display: flex;
     justify-items: start;
@@ -404,20 +482,17 @@
         flex-direction: column;
         align-items: left;
         margin: 10px 0px;
-        text-decoration-style: none;
-        list-style: none;
         padding: 0px 5px
     }
 
 .footer__BottomMenu__pages ul li a{
-    text-decoration: none;
     color: white;
 }
 
 .footer_BottomMenu__social{
     display: flex;  
     justify-content: right;
-    align-self: center;
+    align-self: top;
     width: 100%;
     height: auto;
     
