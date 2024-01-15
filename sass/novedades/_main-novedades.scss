@@ -1,0 +1,52 @@
+/* Pagina novedades */
+.main__Space{
+    width: 100%;
+    margin-top: 8px;
+    height: 47px;
+    background-color: #F5F5F5;
+}
+.main__Novedades__section{
+    position: relative;
+    max-width: 100vw;
+    height: auto;
+}
+.main__Novedades__section__nav{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 10px;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.main__Novedades__section__nav__words{
+    height: auto;
+    max-width: 100%;
+    font-size: medium;
+    font-weight: bolder;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 0;
+}
+
+/* RESOLVER PROBLEMA CON LOS TEXTOS, TIENEN QUE ESTAR MAS SEPARADOS 1 IZQUIERDA 2 DERECHA CON SUS ICONOS */
+/* .main__Novedades__section__nav__word1 {
+    max-width: 100%;
+    justify-self: flex-start;
+} */
+.main__Novedades__section__nav__filterBts{
+    background-color: white;
+    border: white;
+    margin: 0;
+    width: 23px;
+    height: 23px;
+}
+.main__Novedades__section__nav__filterIcons{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: auto;
+}

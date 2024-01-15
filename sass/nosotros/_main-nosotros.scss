@@ -1,0 +1,143 @@
+    /* Pagina Nosotros */
+    .main__Collage{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+    .main__Collage__box{
+        display: grid;
+        grid-template-areas: 
+            "imgbanner1 imgbanner2 imgbanner3"
+            "img1 img2 img3 "
+        ;
+        margin: 10px 0px;
+    }
+    .main__Collage__box__imgBanner{
+        width: 100%;
+        height: 850px;
+        object-fit: cover;
+    }
+    .main__Collage__box__imgBanner:nth-child(1){
+        grid-area: imgbanner1;
+        grid-column: span 3 ;
+    }
+    .main__Collage__box__imgBanner:nth-child(2){
+        grid-area: img2;
+    }
+    .main__Collage__box__imgBanner:nth-child(3){
+        grid-area: img3;
+    }
+    .main__Collage__box__imgBanner:nth-child(4){
+        grid-area: img1;
+    }
+    .main__Collage__box__txtNosotros{
+        font-size: xx-large;
+        font-weight: bold;
+        margin-top: 30px;
+        padding: 10px;
+        position: absolute;
+        width: auto;
+        height: auto;
+        color: white;
+        text-align: center;
+        align-self: flex-start;
+        justify-self: center;
+    }
+    .main__Collage__box__img1__txt2{
+        margin-top: 65px;
+        font-size: larger;
+        font-weight: lighter;
+        align-self: flex-start;
+        justify-self: center;
+    }
+    .main__Collage__box__buttons__boxMaster{
+        display: grid;
+        grid-template-areas: 
+            "afk1 afk2 afk3"
+            "btn1 btn2 btn3"
+            ;
+        width: 1920px;
+        height: 1700px;
+        max-width: 100%;
+        position: absolute;
+    }
+    .main__Collage__box__buttons__boxes{
+        display:flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 65px;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+    }
+    .main__Collage__box__buttons{
+        display: block;
+        position: absolute;
+        width: 55px;
+        height: auto;
+        margin-right: 30px;
+        background-color: white;
+        border-radius: 8px;
+        border: white;
+        color: black;
+        padding: 0px;
+        cursor: pointer;
+        text-align: center;
+        font-size: small;
+        font-weight: bold;
+        white-space:nowrap ;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        box-shadow: 1px 1px 0px black;
+        transition: 0.1s;
+    }
+    .main__Collage__box__buttons:hover{
+        transition: 0.4s;
+        box-shadow: 1px 1px 3px black;
+        color: white;
+        background-color: black;
+        border: black;
+    }
+    .main__Collage__box__buttons__boxes:nth-child(1){
+        grid-area: btn1;
+        align-self: flex-end;
+        ;
+    }
+    .main__Collage__box__buttons__boxes:nth-child(2){
+        grid-area: btn2;
+        align-self: flex-end;
+    }
+    .main__Collage__box__buttons__boxes:nth-child(3){
+        grid-area: btn3;
+        align-self: flex-end;
+    }
+    .main__Collage__box__img2__button{
+        margin-right: 95px;
+    }
+    .main__Collage__box__img3__button{
+        margin-right: 60px;
+    }
+    .main__Disclaimer{
+        width: 100%;
+        max-height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin: 0;
+    }
+    .main__Disclaimer__box{
+        display: block;
+        text-align: start;
+        background-color: rgb(254, 248, 240);
+        max-width: 100vw;
+        max-height: 100vh;
+        margin-bottom: 10px;
+    }
+    .main__Disclaimer__box__text{
+        width: 100%;
+        height: auto;
+        padding: 8px;
+        font-weight: lighter;
+        font-size: x-small;
+    }

@@ -1,0 +1,104 @@
+    /* Pagina Contacto */
+    .main__Bgtext{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .main__Bgtext__txt{
+        font-weight: bolder;
+        font-size: xx-large;
+        text-shadow: 1px 1px 2px black;
+    }
+    .main__Form{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0;
+    }
+    .main__Form__edge{
+        max-width: fit-content;
+        margin: 8px 20px;
+        background-color: rgb(228, 228, 222);
+        border: none;
+        border-radius: 20px;
+        box-shadow: 1px 1px 3px black;
+    }
+    .main__Form__edge__fields{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        width: 660px;
+        height: 400px;
+    }
+    .main__Form__edge__fields__ul{
+        padding: 0px;
+        margin: 5px 10px;
+    }
+    .main__Form__edge__fields__lists{
+        width: 100%;
+        height: auto;
+        list-style: none;
+        margin: 0px;
+        font-size: medium;
+        font-weight: bold;
+        letter-spacing: normal;
+    }
+    .main__Form__edge__fields__Datafields{
+        align-self: flex-start;
+        text-align: left;
+        height: 20px;
+        border: none;
+        border-color: none;
+        color: rgb(167, 161, 161);
+        background-color: rgb(185, 183, 183);
+        border-radius: 6px;
+        padding: 5px
+        
+    }
+    .main__Form__edge__fields__Datafields:focus-within{
+        background-color: rgb(231, 231, 231);
+        transition: 0.1s;
+        box-shadow: 1px 1px 5px rgb(55, 55, 55);
+        border-style: none;
+        border: none;
+        color: black;
+    }
+    /* FALTA RESOLVER PROBLEMAS CON LA RESPONSIVIDAD DEL ESPACIO PARA COLOCAR MENSAJES, SE DESBORDA AL LLEGAR A CIERTA RESOLUCION MENOR */
+    .main__Form__edge__fields__field4{
+        resize: none;
+        box-sizing: border-box;
+        max-width: auto;
+        width: 640px;
+        height: 160px;
+    }
+    .main__Form__edge__fields__button{
+        align-self: flex-start;
+        align-items: center;
+        margin: 10px;
+        width: 50px;
+        height: auto;
+        text-align: center;
+        padding: 0px;
+        color: white;
+        background-color: black;
+        border: black;
+        border-radius: 8px;
+        box-shadow: 1px 1px 0px black;
+        transition: 0.1s;
+    }
+    .main__Form__edge__fields__button:hover{
+        transition: 0.4s;
+        box-shadow: 1px 1px 3px black;
+        color: black;
+        background-color: white;
+        border: white;
+    }
