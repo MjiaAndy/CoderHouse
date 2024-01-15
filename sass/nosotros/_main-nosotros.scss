@@ -91,9 +91,14 @@
         overflow: hidden;
         box-shadow: 1px 1px 0px black;
         transition: 0.1s;
+            -webkit-transition: .5s, color .10s;
+            -moz-transition: .5s, color .10s;
     }
     .main__Collage__box__buttons:hover{
         transition: 0.4s;
+        transform: scale3d(1.2, 1.2, 0.2);
+            -webkit-transform: scale3d(1.2, 1.2, 0.2);
+            -moz-transform: scale3d(1.2, 1.2, 0.2);
         box-shadow: 1px 1px 3px black;
         color: white;
         background-color: black;

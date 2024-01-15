@@ -149,10 +149,15 @@
   font-size: normal;
   font-weight: bold;
   transition: 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
 
 .main__Section__newIncome__button:hover {
   transition: 0.4s;
+  transform: scale3d(1.2, 1.2, 0.2);
+  -webkit-transform: scale3d(1.2, 1.2, 0.2);
+  -moz-transform: scale3d(1.2, 1.2, 0.2);
   box-shadow: 1px 1px 3px black;
   color: white;
   background-color: black;
@@ -215,7 +220,9 @@
   opacity: 100%;
   border: none;
   box-shadow: 0px 0px 0px;
-  transition: 0.2s;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
 
 .main__Products__boxProducts {
@@ -232,7 +239,10 @@
 
 .main__Products__edgeProducts:hover {
   transition: 0.5s;
-  box-shadow: 1px 1px 6px black;
+  box-shadow: 2px 2px 8px 0 #616161, 0 6px 6px 0 #616161;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
 }
 
 .main__Products__imgProducts {
@@ -288,10 +298,15 @@
   margin-left: 5px;
   box-shadow: 1px 1px 0px black;
   transition: 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
 
 .main__Products__btnboxes__buttonProducts:hover {
   transition: 0.4s;
+  transform: scale3d(1.2, 1.2, 0.2);
+  -webkit-transform: scale3d(1.2, 1.2, 0.2);
+  -moz-transform: scale3d(1.2, 1.2, 0.2);
   box-shadow: 1px 1px 3px black;
   color: black;
   background-color: white;
@@ -453,10 +468,15 @@
   overflow: hidden;
   box-shadow: 1px 1px 0px black;
   transition: 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
 
 .main__Collage__box__buttons:hover {
   transition: 0.4s;
+  transform: scale3d(1.2, 1.2, 0.2);
+  -webkit-transform: scale3d(1.2, 1.2, 0.2);
+  -moz-transform: scale3d(1.2, 1.2, 0.2);
   box-shadow: 1px 1px 3px black;
   color: white;
   background-color: black;
@@ -616,10 +636,15 @@
   border-radius: 8px;
   box-shadow: 1px 1px 0px black;
   transition: 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
 
 .main__Form__edge__fields__button:hover {
   transition: 0.4s;
+  transform: scale3d(1.2, 1.2, 0.2);
+  -webkit-transform: scale3d(1.2, 1.2, 0.2);
+  -moz-transform: scale3d(1.2, 1.2, 0.2);
   box-shadow: 1px 1px 3px black;
   color: black;
   background-color: white;
