@@ -4,6 +4,7 @@
     background-color: rgb(0, 0, 0);
     max-width: 100vw;
     height: auto;
+    max-height: 100%;
 }
 
 .footer__BottomMenu{
@@ -25,9 +26,11 @@
 
 .footer__BottomMenu__pages__anchor{
     color: rgb(170, 169, 169);
+    transition: 0.1s;
 }
 .footer__BottomMenu__pages__anchor:hover{
     color: white;
+    transition: 0.2s;
 }
 
 .footer_BottomMenu__social{

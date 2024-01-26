@@ -13,6 +13,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,800&display=swap" rel="stylesheet">
         
+        <!-- Font de Google "Anton Static Regular 400" -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,800&display=swap" rel="stylesheet">
+
         <!-- Estilos Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -21,33 +26,33 @@
     </head>
 
     <!--Cuerpo de las paginas-->
-    <body id="body">    
+    <body id="body-Black">    
     <!--Inicio encabezado de las paginas-->
     <header id="header" >
-        <nav class="navbar  h-auto navbar-expand-lg bg-body-emphasis d-flex ">
-            <div class="container-fluid h-auto align-items-center">
-              <a class="navbar-brand px-2 w-auto h-auto" href="#"><img src="../icons/HEADER.png" width="100px" alt=""></a>
+        <nav class="navbar navbar-Black h-auto navbar-expand-lg bg-body-emphasis d-flex ">
+            <div class="container-fluid h-auto align-text-top bg-black align-items-center">
+              <a class="navbar-brand px-2 py-2 w-auto h-auto" href="#"><img class="align-self-center" src="../icons/Header-r.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse h-auto w-100 justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              <div class="collapse navbar-collapse h-auto justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav align-content-end">
+                  <li class="nav-item nav-items-li">
+                    <a class="nav-link nav-links-a" aria-current="page" href="../index.html">Inicio</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./novedades.html">Novedades/Destacado</a>
+                  <li class="nav-item nav-items-li">
+                    <a class="nav-link nav-links-a" href="./novedades.html">Novedades/Destacado</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">
+                  <li class="nav-item nav-items-li">
+                    <a class="nav-link nav-links-a" href="#">
                       Nosotros
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  <li class="nav-item nav-items-li">
+                    <a class="nav-link nav-links-a" href="./contacto.html">Contacto</a>
                   </li>
-                  <li>
-                    <a class="nav-link" href="./ofertas.html">Ofertas</a>
+                  <li class="nav-item nav-items-li">
+                    <a class="nav-link nav-links-a" href="./ofertas.html">Ofertas</a>
                   </li>
                 </ul>
               </div>
@@ -60,28 +65,61 @@
     <!-- Contenido -->
         <main id="main">
             <section class="main__Collage">
-                <article class="main__Collage__box">
-                    <img class="main__Collage__box__img1 main__Collage__box__imgBanner" src="../images/BN1-0.png" alt="">
-                    <h1 class="main__Collage__box__img1__txt1 main__Collage__box__txtNosotros">Con estilo y positividad</h1>
-                    <h3 class="main__Collage__box__img1__txt2 main__Collage__box__txtNosotros">Avanza a paso firme hacia el futuro, con el calzado perfecto para cada logro en tu camino</h3>
-                    <img class="main__Collage__box__img2 main__Collage__box__imgBanner" src="../images/BN1-2.jpg" alt="">
-                    <img class="main__Collage__box__img3 main__Collage__box__imgBanner" src="../images/BN1-3.jpg" alt="">
-                    <img class="main__Collage__box__img4 main__Collage__box__imgBanner" src="../images/BN1-4.jpg" alt="">
-                    
-                    <div class="main__Collage__box__buttons__boxMaster">
-                      <div class="main__Collage__box__buttons__box1 main__Collage__box__buttons__boxes">
-                        <button class="main__Collage__box__img2__button main__Collage__box__buttons">Ver Mas</button>
-                      </div>
-      
-                      <div class="main__Collage__box__buttons__box2 main__Collage__box__buttons__boxes">
-                        <button class="main__Collage__box__img3__button main__Collage__box__buttons">Ver Mas</button>
-                      </div>
-  
-                      <div class="main__Collage__box__buttons__box3 main__Collage__box__buttons__boxes">
-                        <button class="main__Collage__box__img4__button main__Collage__box__buttons">Ver Mas</button>
-                      </div>
-                    </div>
+              <article class="main__Collage__art1 main__Collage__articles" >
+                <div class="main__Collage__art1__div">
+                  <video class="main__Collage__art1__div__vid main__Collage__articles__vids" src="/images/VS-SFB-01.mp4" autoplay loop></video>
+                </div>
+                <article class="main__Collage__art1__box main__Collage__articles__box">
+                  <div class="main__Collage__art1__text main__Collage__articles__text">
+                    <h2 class="main__Collage__art1__h2 main__Collage__articles__h2">Hacia el futuro con el calzado perfecto para cada logro</h2>
+                    <p class="main__Collage__art1__p main__Collage__articles__p" >Con estilo y positividad.</p>
+                  </div>
                 </article>
+              </article>
+              <article class="main__Collage__art2 main__Collage__articles" >
+                <img class="main__Collage__art2__img main__Collage__articles__imgs" src="/images/SN-02.jpg" alt="">
+                <div class="main__Collage__art2__text main__Collage__articles__text">
+                  <h2 class="main__Collage__art2__h2 main__Collage__articles__h2">De la Comodidad a la Vanguardia</h2>
+                  <div class="main__Collage__art2__btnbox main__Collage__articles__btnbox">
+                    <p class="main__Collage__art2__p main__Collage__articles__p" >Desde la máxima comodidad hacia la vanguardia del diseño, hemos transformado la experiencia del caminar. Con un enfoque implacable en la ergonomía, cada paso es una evolución hacia el futuro.
+                    <span class="m-1"><button class="main__Collage__art2__btnbox__button main__Collage__articles__btnbox__buttons">Ver Mas</button>
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="main__Collage__art3 main__Collage__articles" >
+                <img class="main__Collage__art3__img main__Collage__articles__imgs" src="/images/SN-03.jpg" alt="">
+                <div class="main__Collage__art3__text main__Collage__articles__text">
+                  <h2 class="main__Collage__art3__h2 main__Collage__articles__h2">Diseño que Perdura</h2>
+                  <div class="main__Collage__art3__btnbox main__Collage__articles__btnbox">
+                    <p class="main__Collage__art3__btnbox__p main__Collage__articles__p" >En cada puntada, en cada detalle, nuestro compromiso con el diseño perdurable es evidente. La durabilidad no es simplemente una característica, sino una filosofía arraigada para nosotros.
+                    <span class="m-1"><button class="main__Collage__art3__btnbox__button main__Collage__articles__btnbox__buttons">Ver Mas</button>
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="main__Collage__art4 main__Collage__articles">
+                <video class="main__Collage__art4__vid main__Collage__articles__vids" src="/images/SN-04-.mp4" autoplay loop></video>
+                <div class="main__Collage__art4__text main__Collage__articles__text">
+                  <h2 class="main__Collage__art4__h2 main__Collage__articles__h2">Elevando el Estilo</h2>
+                  <div class="main__Collage__art4__btnbox main__Collage__articles__btnbox">
+                    <p class="main__Collage__art4__btnbox__p main__Collage__articles__p" >Más allá de las tendencias pasajeras. Tenemos el compromiso constante con la excelencia estética y la sofisticación. La opinión del público conocedor es un testimonio de nuestro éxito.
+                    <span class="m-1"><button class="main__Collage__art4__btnbox__button main__Collage__articles__btnbox__buttons">Ver Mas</button>
+                    </span></p>
+                  </div>
+                </div>
+              </article>
+              <article class="main__Collage__art5 main__Collage__articles" >
+                <img class="main__Collage__art5__img main__Collage__articles__imgs" src="/images/SN-05.jpg" alt="">
+                <div class="main__Collage__art5__text main__Collage__articles__text">
+                  <h2 class="main__Collage__art5__h2 main__Collage__articles__h2">Ergonomía a la Moda</h2>
+                  <div class="main__Collage__art5__btnbox main__Collage__articles__btnbox">
+                    <p class="main__Collage__art5__btnbox__p main__Collage__articles__p" >Más allá de seguir tendencias, hemos liderado la revolución al convertir la ergonomía en una declaración de moda. Respaldado por el reconocimiento y la admiración de un público conocedor que valora la fusión perfecta entre confort y estilo.
+                    <span class="m-1"><button class="main__Collage__art5__btnbox__button main__Collage__articles__btnbox__buttons">Ver Mas</button>
+                    </span></p>
+                  </div>
+                </div>
+              </article>
             </section>
 
             <section class="main__Disclaimer">

@@ -2,6 +2,7 @@
 #body {
     background-color: rgb(255, 255, 255);
     max-width: 1920px;
+    height: 100%;
     min-height: 100vh;
     margin: 0 auto;
 }
@@ -27,6 +28,5 @@
     text-rendering: optimizeLegibility;
 }
 :is(img, button, label) {
-    /* image-rendering: optimizeQuality; */
     shape-rendering: geometricPrecision;
 }

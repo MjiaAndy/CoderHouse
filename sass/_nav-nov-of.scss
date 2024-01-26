@@ -1,0 +1,35 @@
+.navbar-Black{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    .container-fluid{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        .navbar-brand img{
+            object-fit: cover;
+            display: block;
+            filter: invert(100%) ;
+        }
+        .navbar-toggler{
+            filter: invert(100%);
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-items-li{
+                    .nav-links-a{
+                        color: gray;
+                        transition: 0.1s;
+                            &:hover{
+                                color: white;
+                                transition: 0.2s;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+

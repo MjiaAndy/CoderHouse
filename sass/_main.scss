@@ -50,11 +50,12 @@
 }
 
 .main__Section__newIncome__Txts{
+    justify-content: flex-start;
     position: relative;
     text-align: center;
     overflow: hidden;
     color: white;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 1px 2px 3px black;
 }
 .main__Section__newIncome__Txt2{
     font-weight: bolder;
@@ -108,31 +109,49 @@
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-    margin-top: 10px;
+    margin: 10px 0px;
 }
 
 /* //////Lista de Produtos////// */
 .main__Div{
     display: flex;
-    margin: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
     width: 100%;
-    height: 55px;
+    height: 50px ;
     background-color: white;
     padding-left: 10px ;
     text-align: flex-start;
+    .main__Div__title{
+        align-self: center;
+        color: black;
+        font-size: x-large;
+        font-weight: bold;
+        margin: 0px;
+    }
+    .carousel-control-btns{
+        position: relative;
+        width: 45px;
+        height: 45px;
+        .carousel-control-icon{
+            object-fit: cover;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .main__Div__boxbutton{
+        display: flex;
+        width: auto;
+        height: auto;
+    }
 }
-.main__Div__title{
-    align-self: center;
-    color: black;
-    font-size: x-large;
-    font-weight: bold;
-    margin: 0px;
-}
-.main__Products{
+.main__Productslist1{
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     width: 100%;
     height: auto;
@@ -142,7 +161,7 @@
 .main__Products__edgeProducts{
     display: flex;
     position: relative;
-    background-color: rgb(245, 242, 238);
+    background-color: rgb(244, 244, 244);
     padding: 5px;
     border-radius: 5px;
     opacity: 100%;
@@ -160,7 +179,7 @@
     align-items: center;
     width: 445px;
     height: 480px;
-    background-color: rgb(240, 238, 238);
+    background-color: #F5F5F5;
     border-radius: 5px;
 }
 .main__Products__edgeProducts:hover{

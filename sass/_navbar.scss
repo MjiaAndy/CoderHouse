@@ -4,16 +4,96 @@
     height: auto;
     margin: 0;
     padding: 0;
-}
-.container-fluid{
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-    text-align: center;
-}
-.navbar-brand img{
-    width: 42px;
-    height: 42px;
-    object-fit: fill;
-    display: block;
+    .container-fluid{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        .navbar-brand{
+            margin: 0px;
+            align-items: center;
+            max-width: fit-content;
+            img{
+                object-fit: cover;
+                display: block;
+            }
+        }
+        .navbar-List{
+            display: flex;
+            width: fit-content;
+            min-width: fit-content;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            .navbar-List-Search{
+                position: relative;
+                align-items: center;
+                width:auto;
+                .navbar-List-Search-box{
+                    display: flex;
+                    width: auto;
+                    height: 38px;
+                    position: relative;
+                    justify-content: flex-end;
+                    transition: 0.1s;
+                    .form-control{
+                        width: 130px;
+                        max-width: border-box;
+                        color: rgb(146, 146, 146);
+                        border-radius: 16px;
+                            &:hover::placeholder{
+                                color: black;
+                                transition: 0.2s;
+                            }
+                    }
+                    .btn-outline-success{
+                        border: none;
+                        position: absolute;
+                        background-color: transparent;
+                            &:hover{
+                                background-color: transparent;
+                            }
+                        .navbar-Search-icon{
+                            width: auto;
+                            height: auto;
+                            align-self: center;
+                            filter: invert(50%);
+                            transition: 0.1s;
+                                &:hover{
+                                    filter: invert(0%);
+                                    transition: 0.2s;
+                                }    
+                        }
+                    }
+                }
+            }
+            .navbar-toggler{
+                margin-right: 5px;
+                padding: 2px 2px;
+                width: fit-content;
+                height: fit-content;
+                .navbar-toggler-menu{
+                    object-fit: fill;
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+            .navbar-collapse{
+                min-width: fit-content;
+                flex-wrap: wrap;
+                .navbar-nav{
+                    .nav-lists{
+                        .nav-links{
+                            color: gray;
+                            transition: 0.1s;
+                                &:hover{
+                                    color: black;
+                                    transition: 0.2s;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
 }

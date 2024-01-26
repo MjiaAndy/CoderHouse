@@ -27,30 +27,30 @@
     <body id="body">    
     <!--Inicio encabezado de las paginas-->
     <header id="header" >
-        <nav class="navbar h-auto navbar-expand-lg bg-body-emphasis d-flex">
-            <div class="container-fluid  h-auto align-items-center">
-              <a class="navbar-brand px-2 w-auto h-auto" href="#"><img src="../icons/HEADER.png" alt=""></a>
+        <nav class="navbar navbar-Black h-auto navbar-expand-lg bg-body-emphasis d-flex">
+            <div class="container-fluid  h-auto align-items-center align-text-top bg-black">
+              <a class="navbar-brand px-2 py-2 align-self-start" href="#"><img class="align-self-center" src="../icons/Header-r.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse  h-auto justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav  align-content-end">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                <ul class="navbar-nav  align-content-end ">
+                  <li class="nav-item nav-items-li">
+                    <a class="nav-link nav-links-a" aria-current="page" href="../index.html">Inicio</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./novedades.html">Novedades/Destacado</a>
+                  <li class="nav-item nav-items-li">
+                    <a class="nav-link nav-links-a" href="./novedades.html">Novedades/Destacado</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="./nosotros.html" role="button" data-bs="dropdown" aria-expanded="false">
+                  <li class="nav-item nav-items-li">
+                    <a class="nav-link nav-links-a" href="./nosotros.html"  aria-expanded="false">
                       Nosotros
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  <li class="nav-item nav-items-li">
+                    <a class="nav-link nav-links-a" href="./contacto.html">Contacto</a>
                   </li>
-                  <li>
-                    <a class="nav-link" href="#">Ofertas</a>
+                  <li class="nav-item nav-items-li">
+                    <a class="nav-link nav-links-a" href="#">Ofertas</a>
                   </li>
                 </ul>
               </div>
@@ -66,67 +66,243 @@
     
             <section class="main__Novedades__section">
                 <article class="main__Novedades__section__nav">
-                    <h3 class=" main__Novedades__section__nav__word1 main__Novedades__section__nav__words">Filtro <button class="botonfiltro1 main__Novedades__section__nav__filterBts"><img class="icon1 main__Novedades__section__nav__filterIcons" src="../icons/filter_7666125.png" alt=""></button></h3>
-                    <h3 class=" main__Novedades__section__nav__word2 main__Novedades__section__nav__words">Ordenar <button class="botonfiltro2 main__Novedades__section__nav__filterBts"><img class="icon2 main__Novedades__section__nav__filterIcons" src="../icons/right-arrow_271228.png" alt=""></button></h3>
+                    <div class="main__Novedades__section__nav__Text align-items-center m-0">
+                        <h3>Ultimas ofertas</h3>
+                    </div>
+
+                    <div class="main__Novedades__section__nav__divBtn">
+                        <button class="main__Novedades__section__nav__button1 main__Novedades__section__nav__filterBts align-items-center me-1"><h3 class=" main__Novedades__section__nav__word1 main__Novedades__section__nav__words">Filtro </h3>
+                        <span>
+                            <img class="main__Novedades__section__nav__icon1 main__Novedades__section__nav__filterIcons" src="../icons/filter.svg" alt="">
+                        </span>
+                        </button>
+                        <div class="main__Novedades__section__nav__divBtn__menu d-flex">
+                            <button class="main__Novedades__section__nav__button2 main__Novedades__section__nav__filterBts align-items-center me-2" data-bs-toggle="dropdown" aria-expanded="false"><h3 class=" main__Novedades__section__nav__word2 main__Novedades__section__nav__words">Ordenar </h3>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-list"><a class="dropdown-item" href="#">Mayor precio</a></li>
+                                    <li class="dropdown-list"><a class="dropdown-item" href="#" aria-current="true">Menor precio</a></li>
+                                    <li class="dropdown-list"><a class="dropdown-item" href="#">Mas reciente</a></li>
+                                    <li class="dropdown-list"><a class="dropdown-item" href="#">Mas antiguo</a></li>
+                                </ul>
+                                <span class="">
+                                    <img class="main__Novedades__section__nav__icon2 main__Novedades__section__nav__filterIcons" src="../icons/caret-down.svg" alt="">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
                 </article>
             </section>
 
             <section data-aos="fade-up"
-            data-aos-duration="1000" class="main__Products">
+            data-aos-duration="1000" class="main__Products__Sale">
 
                 <fieldset class="main__Products__product1__edge main__Products__edgeProducts">
                     <article class="main__Products__poduct1 main__Products__boxProducts">
-                        <img class="main__Products_product1__img main__Products__imgProducts" src="../images/PS-03.jpg" alt=""><img class="main__Products__product1__off main__Products__offimg" src="../icons/50-percent_6977778.png">
+                        <div class="main__Products__divImgs">
+                            <img class="main__Products_product1__img main__Products__imgProducts" src="../images/PS-03.jpg" alt="">
+                            <div class="boxImgoff">
+                                <img class="main__Products__product1__off main__Products__offimg" src="../icons/icon-sale-bgt.png">
+                            </div>
+                        </div>
                         
                         <div class="main__Products__product1__txtbox main__Products__txtProducts">
                             <h2 class="main__Products__product1__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
                             <h3 class="main__Products__product1__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
-                            <h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5>
+                            <div class="main__Products__product1__divtxt main__Products__divstxt">
+                                <h5 class="main__Products__product1__divtxt__price main__Products__txtProducts__pricesoff me-2">Price$$$</h5><span><h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5></span>
+                            </div>
                         </div>
                         <div class="main__Products__product1__btnbox main__Products__btnboxes">
                             <button class="main__Products__product1__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
                         </div>
                     </article>
                 </fieldset>
-                <fieldset class="main__Products__product1__edge main__Products__edgeProducts">
-                    <article class="main__Products__poduct1 main__Products__boxProducts">
-                        <img class="main__Products_product1__img main__Products__imgProducts" src="../images/PS-01.jpg" alt=""><img class="main__Products__product1__off main__Products__offimg" src="../icons/50-percent_6977778.png">
-                        
-                        <div class="main__Products__product1__txtbox main__Products__txtProducts">
-                            <h2 class="main__Products__product1__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
-                            <h3 class="main__Products__product1__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
-                            <h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5>
+                <fieldset class="main__Products__product2__edge main__Products__edgeProducts">
+                    <article class="main__Products__poduct2 main__Products__boxProducts">
+                        <div class="main__Products__divImgs">
+                            <img class="main__Products_product2__img main__Products__imgProducts" src="../images/PS-01.jpg" alt="">
+                            <div class="boxImgoff">
+                                <img class="main__Products__product1__off main__Products__offimg" src="../icons/icon-sale-bgt.png">
+                            </div>
                         </div>
-                        <div class="main__Products__product1__btnbox main__Products__btnboxes">
-                            <button class="main__Products__product1__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
+                        
+                        <div class="main__Products__product2__txtbox main__Products__txtProducts">
+                            <h2 class="main__Products__product2__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
+                            <h3 class="main__Products__product2__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
+                            <div class="main__Products__product1__divtxt main__Products__divstxt">
+                                <h5 class="main__Products__product1__divtxt__price main__Products__txtProducts__pricesoff me-2">Price$$$</h5><span><h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5></span>
+                            </div>
+                        </div>
+                        <div class="main__Products__product2__btnbox main__Products__btnboxes">
+                            <button class="main__Products__product2__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
                         </div>
                     </article>
                 </fieldset>
-                <fieldset class="main__Products__product1__edge main__Products__edgeProducts">
-                    <article class="main__Products__poduct1 main__Products__boxProducts">
-                        <img class="main__Products_product1__img main__Products__imgProducts" src="../images/PS-10.jpg" alt=""><img class="main__Products__product1__off main__Products__offimg" src="../icons/50-percent_6977778.png">
-                        
-                        <div class="main__Products__product1__txtbox main__Products__txtProducts">
-                            <h2 class="main__Products__product1__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
-                            <h3 class="main__Products__product1__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
-                            <h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5>
+                <fieldset class="main__Products__product3__edge main__Products__edgeProducts">
+                    <article class="main__Products__poduct3 main__Products__boxProducts">
+                        <div class="main__Products__divImgs">
+                            <img class="main__Products_product3__img main__Products__imgProducts" src="../images/PS-10.jpg" alt="">
+                            <div class="boxImgoff">
+                                <img class="main__Products__product1__off main__Products__offimg" src="../icons/icon-sale.png">
+                            </div>
                         </div>
-                        <div class="main__Products__product1__btnbox main__Products__btnboxes">
-                            <button class="main__Products__product1__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
+                        
+                        <div class="main__Products__product3__txtbox main__Products__txtProducts">
+                            <h2 class="main__Products__product3__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
+                            <h3 class="main__Products__product3__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
+                            <div class="main__Products__product1__divtxt main__Products__divstxt">
+                                <h5 class="main__Products__product1__divtxt__price main__Products__txtProducts__pricesoff me-2">Price$$$</h5><span><h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5></span>
+                            </div>
+                        </div>
+                        <div class="main__Products__product3__btnbox main__Products__btnboxes">
+                            <button class="main__Products__product3__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
                         </div>
                     </article>
                 </fieldset>
-                <fieldset class="main__Products__product1__edge main__Products__edgeProducts">
-                    <article class="main__Products__poduct1 main__Products__boxProducts">
-                        <img class="main__Products_product1__img main__Products__imgProducts" src="../images/PS-12.jpg" alt=""><img class="main__Products__product1__off main__Products__offimg" src="../icons/50-percent_6977778.png">
-                        
-                        <div class="main__Products__product1__txtbox main__Products__txtProducts">
-                            <h2 class="main__Products__product1__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
-                            <h3 class="main__Products__product1__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
-                            <h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5>
+                <fieldset class="main__Products__product4__edge main__Products__edgeProducts">
+                    <article class="main__Products__poduct4 main__Products__boxProducts">
+                        <div class="main__Products__divImgs">
+                            <img class="main__Products_product4__img main__Products__imgProducts" src="../images/PS-12.jpg" alt="">
+                            <div class="boxImgoff">
+                                <img class="main__Products__product1__off main__Products__offimg" src="../icons/icon-sale.png">
+                            </div>
                         </div>
-                        <div class="main__Products__product1__btnbox main__Products__btnboxes">
-                            <button class="main__Products__product1__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
+                        
+                        <div class="main__Products__product4__txtbox main__Products__txtProducts">
+                            <h2 class="main__Products__product4__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
+                            <h3 class="main__Products__product4__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
+                            <div class="main__Products__product1__divtxt main__Products__divstxt">
+                                <h5 class="main__Products__product1__divtxt__price main__Products__txtProducts__pricesoff me-2">Price$$$</h5><span><h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5></span>
+                            </div>
+                        </div>
+                        <div class="main__Products__product4__btnbox main__Products__btnboxes">
+                            <button class="main__Products__product4__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
+                        </div>
+                    </article>
+                </fieldset>
+                <fieldset class="main__Products__product5__edge main__Products__edgeProducts">
+                    <article class="main__Products__poduct5 main__Products__boxProducts">
+                        <div class="main__Products__divImgs">
+                            <img class="main__Products_product5__img main__Products__imgProducts" src="../images/PS-14.jpg" alt="">
+                            <div class="boxImgoff">
+                                <img class="main__Products__product1__off main__Products__offimg" src="../icons/icon-sale.png">
+                            </div>
+                        </div>
+                        
+                        <div class="main__Products__product5__txtbox main__Products__txtProducts">
+                            <h2 class="main__Products__product5__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
+                            <h3 class="main__Products__product5__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
+                            <div class="main__Products__product1__divtxt main__Products__divstxt">
+                                <h5 class="main__Products__product1__divtxt__price main__Products__txtProducts__pricesoff me-2">Price$$$</h5><span><h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5></span>
+                            </div>
+                        </div>
+                        <div class="main__Products__product5__btnbox main__Products__btnboxes">
+                            <button class="main__Products__product5__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
+                        </div>
+                    </article>
+                </fieldset>
+                <fieldset class="main__Products__product6__edge main__Products__edgeProducts">
+                    <article class="main__Products__poduct6 main__Products__boxProducts">
+                        <div class="main__Products__divImgs">
+                            <img class="main__Products_product6__img main__Products__imgProducts" src="../images/PS-15.jpg" alt="">
+                            <div class="boxImgoff">
+                                <img class="main__Products__product1__off main__Products__offimg" src="../icons/icon-sale.png">
+                            </div>
+                        </div>
+                        
+                        <div class="main__Products__product6__txtbox main__Products__txtProducts">
+                            <h2 class="main__Products__product6__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
+                            <h3 class="main__Products__product6__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
+                            <div class="main__Products__product1__divtxt main__Products__divstxt">
+                                <h5 class="main__Products__product1__divtxt__price main__Products__txtProducts__pricesoff me-2">Price$$$</h5><span><h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5></span>
+                            </div>
+                        </div>
+                        <div class="main__Products__product6__btnbox main__Products__btnboxes">
+                            <button class="main__Products__product6__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
+                        </div>
+                    </article>
+                </fieldset>
+                <fieldset class="main__Products__product7__edge main__Products__edgeProducts">
+                    <article class="main__Products__poduct7 main__Products__boxProducts">
+                        <div class="main__Products__divImgs">
+                            <img class="main__Products_product7__img main__Products__imgProducts" src="../images/PS-21.jpg" alt="">
+                            <div class="boxImgoff">
+                                <img class="main__Products__product1__off main__Products__offimg" src="../icons/icon-sale.png">
+                            </div>
+                        </div>
+                        
+                        <div class="main__Products__product7__txtbox main__Products__txtProducts">
+                            <h2 class="main__Products__product7__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
+                            <h3 class="main__Products__product7__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
+                            <div class="main__Products__product1__divtxt main__Products__divstxt">
+                                <h5 class="main__Products__product1__divtxt__price main__Products__txtProducts__pricesoff me-2">Price$$$</h5><span><h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5></span>
+                            </div>
+                        </div>
+                        <div class="main__Products__product7__btnbox main__Products__btnboxes">
+                            <button class="main__Products__product7__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
+                        </div>
+                    </article>
+                </fieldset>
+                <fieldset class="main__Products__product8__edge main__Products__edgeProducts">
+                    <article class="main__Products__poduct8 main__Products__boxProducts">
+                        <div class="main__Products__divImgs">
+                            <img class="main__Products_product8__img main__Products__imgProducts" src="../images/PS-23.jpg" alt="">
+                            <div class="boxImgoff">
+                                <img class="main__Products__product1__off main__Products__offimg" src="../icons/icon-sale.png">
+                            </div>
+                        </div>
+                        
+                        <div class="main__Products__product8__txtbox main__Products__txtProducts">
+                            <h2 class="main__Products__product8__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
+                            <h3 class="main__Products__product8__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
+                            <div class="main__Products__product1__divtxt main__Products__divstxt">
+                                <h5 class="main__Products__product1__divtxt__price main__Products__txtProducts__pricesoff me-2">Price$$$</h5><span><h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5></span>
+                            </div>
+                        </div>
+                        <div class="main__Products__product8__btnbox main__Products__btnboxes">
+                            <button class="main__Products__product8__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
+                        </div>
+                    </article>
+                </fieldset>
+                <fieldset class="main__Products__product9__edge main__Products__edgeProducts">
+                    <article class="main__Products__poduct9 main__Products__boxProducts">
+                        <div class="main__Products__divImgs">
+                            <img class="main__Products_product1__img main__Products__imgProducts" src="../images/PS-24.jpg" alt="">
+                            <div class="boxImgoff">
+                                <img class="main__Products__product1__off main__Products__offimg" src="../icons/icon-sale.png">
+                            </div>
+                        </div>
+                        
+                        <div class="main__Products__product9__txtbox main__Products__txtProducts">
+                            <h2 class="main__Products__product9__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
+                            <h3 class="main__Products__product9__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
+                            <div class="main__Products__product1__divtxt main__Products__divstxt">
+                                <h5 class="main__Products__product1__divtxt__price main__Products__txtProducts__pricesoff me-2">Price$$$</h5><span><h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5></span>
+                            </div>
+                        </div>
+                        <div class="main__Products__product9__btnbox main__Products__btnboxes">
+                            <button class="main__Products__product9__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
+                        </div>
+                    </article>
+                </fieldset>
+                <fieldset class="main__Products__product10__edge main__Products__edgeProducts">
+                    <article class="main__Products__poduct10 main__Products__boxProducts">
+                        <div class="main__Products__divImgs">
+                            <img class="main__Products_product10__img main__Products__imgProducts" src="../images/PS-29.jpg" alt="">
+                            <div class="boxImgoff">
+                                <img class="main__Products__product1__off main__Products__offimg" src="../icons/icon-sale.png">
+                            </div>
+                        </div>
+                        
+                        <div class="main__Products__product10__txtbox main__Products__txtProducts">
+                            <h2 class="main__Products__product10__txtbox__title main__Products__txtProducts__titles">Shoes Titles. </h2>
+                            <h3 class="main__Products__product10__txtbox__info main__Products__txtProducts__descriptions">Descriptions about the products</h3>
+                            <div class="main__Products__product1__divtxt main__Products__divstxt">
+                                <h5 class="main__Products__product1__divtxt__price main__Products__txtProducts__pricesoff me-2">Price$$$</h5><span><h5 class="main__Products__product1__txtbox__price main__Products__txtProducts__prices">Price$$$</h5></span>
+                            </div>
+                        </div>
+                        <div class="main__Products__product10__btnbox main__Products__btnboxes">
+                            <button class="main__Products__product10__btnbox__button main__Products__btnboxes__buttonProducts">Comprar</button>
                         </div>
                     </article>
                 </fieldset>

@@ -30,33 +30,44 @@
     <body id="body">    
     <!--Inicio encabezado de las paginas-->
         <header id="header" >
-            <nav class="navbar h-auto navbar-expand-lg bg-body-emphasis d-flex">
-                <div class="container-fluid h-auto align-items-center">
-                  <a class="navbar-brand px-2 w-auto h-auto" href="#"><img src="./icons/HEADER.png" alt=""></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse w-100 justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav  align-content-end">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/novedades.html">Novedades/Destacado</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link " href="./pages/nosotros.html" role="button" data-bs="dropdown" aria-expanded="false">
-                          Nosotros
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                      </li>
-                      <li>
-                        <a class="nav-link" href="./pages/ofertas.html">Ofertas</a>
-                      </li>
-                    </ul>
-                  </div>
+            <nav  class="navbar h-auto navbar-expand-lg bg-body-emphasis d-flex ">
+                <div class="container-fluid h-auto align-items-center align-text-top d-flex w-100">
+                    <a class="navbar-brand  px-2 py-2 align-self-start" href="#"><img  class="align-self-center" src="./icons/Header-r.png" alt=""></a>
+                    <div class="navbar-List">
+                        <div class="navbar-List-Search me-2">
+                            <form class="d-flex w-auto" role="search">
+                                <div class="navbar-List-Search-box">
+                                    <input class="form-control"  type="search" placeholder="Buscar" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">
+                                        <img class="navbar-Search-icon" src="./icons/search.svg"></button>
+                                </div>
+                            </form>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><img class="navbar-toggler-menu" src="./icons/list.svg" alt=""></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <ul class="navbar-nav  align-content-center">
+                            <li class="nav-item nav-lists">
+                                <a class="nav-link nav-links" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item nav-lists">
+                                <a class="nav-link nav-links" href="./pages/novedades.html">Novedades/Destacado</a>
+                            </li>
+                            <li class="nav-item nav-lists">
+                                <a class="nav-link nav-links " href="./pages/nosotros.html" aria-expanded="false">
+                                Nosotros
+                                </a>
+                            </li>
+                            <li class="nav-item nav-lists">
+                                <a class="nav-link nav-links" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item nav-lists">
+                                <a class="nav-link nav-links" href="./pages/ofertas.html">Ofertas</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
             
@@ -67,7 +78,7 @@
         <main id="main">
             <nav class="main__News">
                 <h3 class="main__News__txt">Hasta un 50% de descuento</h3>
-                <a  class="main__News__link" href="main/ofertas.html">Comprar</a>
+                <a  class="main__News__link" href="./pages/ofertas.html">Comprar</a>
             </nav>
     
             <section class="main__Section">
@@ -85,14 +96,20 @@
             </section>
 
             <div class="main__Div">
-                <h1 class="main__Div__title">Tendencias de la semana</h1>
+                <div>
+                    <h1 class="main__Div__title">Tendencias de la semana</h1>
+                </div>
+                <div class="main__Div__boxbutton">
+                    <button class="carousel-control-prev carousel-control-btns" type="button" data-bs-target=".main__Products" data-bs-slide="prev">
+                        <span><img class="carousel-control-icon" src="./icons/arrow-left-circle-fill.svg" alt=""></span>
+                    <button class="carousel-control-next carousel-control-btns" type="button" data-bs-target=".main__Products" data-bs-slide="next">
+                        <span><img class="carousel-control-icon" src="./icons/arrow-right-circle-fill.svg" alt=""></span>
+                </div>
             </div>
-
             <section data-aos="fade-up"
-            data-aos-duration="1000"  class="main__Products">
-                
+            data-aos-duration="1000" class="main__Productslist1 " >
                         <fieldset class="main__Products__product1__edge main__Products__edgeProducts ">
-                            <article class="main__Products__poduct1 main__Products__boxProducts">
+                            <article class="main__Products__poduct1 main__Products__boxProducts ">
                                 <img class="main__Products_product1__img main__Products__imgProducts" src="images/PS-01.jpg" alt="">
                                 
                                 <div class="main__Products__product1__txtbox main__Products__txtProducts">
@@ -105,8 +122,8 @@
                                 </div>
                             </article>
                         </fieldset>
-                        <fieldset class="main__Products__product1__edge main__Products__edgeProducts">
-                            <article class="main__Products__poduct1 main__Products__boxProducts">
+                        <fieldset class="main__Products__product1__edge main__Products__edgeProducts  ">
+                            <article class="main__Products__poduct1 main__Products__boxProducts ">
                                 <img class="main__Products_product1__img main__Products__imgProducts" src="images/PS-02.jpg" alt="">
                                 
                                 <div class="main__Products__product1__txtbox main__Products__txtProducts">
@@ -119,7 +136,7 @@
                                 </div>
                             </article>
                         </fieldset>
-                        <fieldset class="main__Products__product1__edge main__Products__edgeProducts">
+                        <fieldset class="main__Products__product1__edge main__Products__edgeProducts  ">
                             <article class="main__Products__poduct1 main__Products__boxProducts">
                                 <img class="main__Products_product1__img main__Products__imgProducts" src="images/PS-03.jpg" alt="">
                                 
@@ -133,7 +150,7 @@
                                 </div>
                             </article>
                         </fieldset>
-                        <fieldset class="main__Products__product1__edge main__Products__edgeProducts">
+                        <fieldset class="main__Products__product1__edge main__Products__edgeProducts   ">
                             <article class="main__Products__poduct1 main__Products__boxProducts">
                                 <img class="main__Products_product1__img main__Products__imgProducts" src="images/PS-04.jpg" alt="">
                                 
@@ -147,8 +164,8 @@
                                 </div>
                             </article>
                         </fieldset>
-
             </section>
+
 
         </main>
         
